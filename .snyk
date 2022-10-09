@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - guardian-js > request > extend:
+        patched: '2022-10-09T21:22:50.333Z'
+  'npm:hoek:20180212':
+    - guardian-js > request > hawk > hoek:
+        patched: '2022-10-09T21:22:50.333Z'
+    - guardian-js > request > hawk > boom > hoek:
+        patched: '2022-10-09T21:22:50.333Z'
+    - guardian-js > request > hawk > sntp > hoek:
+        patched: '2022-10-09T21:22:50.333Z'
+    - guardian-js > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-09T21:22:50.333Z'
+  SNYK-JS-LODASH-567746:
+    - eslint > lodash:
+        patched: '2022-10-09T21:22:50.333Z'
+    - guardian-js > lodash:
+        patched: '2022-10-09T21:22:50.333Z'
+    - eslint > inquirer > lodash:
+        patched: '2022-10-09T21:22:50.333Z'
+    - eslint > table > lodash:
+        patched: '2022-10-09T21:22:50.333Z'
+  'npm:stringstream:20180511':
+    - guardian-js > request > stringstream:
+        patched: '2022-10-09T21:22:50.333Z'
